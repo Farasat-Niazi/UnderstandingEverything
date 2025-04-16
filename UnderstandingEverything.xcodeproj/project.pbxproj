@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		D05CE5C82DAD3754007A4F76 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		D05CE5CC2DAD3AF1007A4F76 /* ImagePresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentor.swift; sourceTree = "<group>"; };
+		D088E36A2DAF93F600A4028B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D09200022DAD0BD700455F99 /* cardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell.swift; sourceTree = "<group>"; };
 		D09200042DAD16EB00455F99 /* ConstantValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValues.swift; sourceTree = "<group>"; };
 		D09200062DAD173B00455F99 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		D0BAE69A2DACE6380043277C = {
 			isa = PBXGroup;
 			children = (
+				D088E36A2DAF93F600A4028B /* README.md */,
 				D0BAE6A52DACE6380043277C /* UnderstandingEverything */,
 				D0BAE6BC2DACE63A0043277C /* UnderstandingEverythingTests */,
 				D0BAE6C62DACE63A0043277C /* UnderstandingEverythingUITests */,
