@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05CE5C52DAD2D71007A4F76 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D05CE5C42DAD2D71007A4F76 /* SDWebImage */; };
+		D05CE5C92DAD3754007A4F76 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CE5C82DAD3754007A4F76 /* Interactor.swift */; };
+		D05CE5CD2DAD3AF1007A4F76 /* ImagePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CE5CC2DAD3AF1007A4F76 /* ImagePresentor.swift */; };
+		D09200032DAD0BD700455F99 /* cardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09200022DAD0BD700455F99 /* cardCell.swift */; };
+		D09200052DAD16EB00455F99 /* ConstantValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09200042DAD16EB00455F99 /* ConstantValues.swift */; };
+		D09200072DAD173B00455F99 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09200062DAD173B00455F99 /* Structures.swift */; };
+		D09200092DAD186C00455F99 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09200082DAD186C00455F99 /* APIRequestHandler.swift */; };
 		D0BAE6A72DACE6380043277C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAE6A62DACE6380043277C /* AppDelegate.swift */; };
 		D0BAE6A92DACE6380043277C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAE6A82DACE6380043277C /* SceneDelegate.swift */; };
 		D0BAE6AB2DACE6380043277C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAE6AA2DACE6380043277C /* ViewController.swift */; };
@@ -36,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D05CE5C82DAD3754007A4F76 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		D05CE5CC2DAD3AF1007A4F76 /* ImagePresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentor.swift; sourceTree = "<group>"; };
+		D09200022DAD0BD700455F99 /* cardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell.swift; sourceTree = "<group>"; };
+		D09200042DAD16EB00455F99 /* ConstantValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValues.swift; sourceTree = "<group>"; };
+		D09200062DAD173B00455F99 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		D09200082DAD186C00455F99 /* APIRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
 		D0BAE6A32DACE6380043277C /* UnderstandingEverything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderstandingEverything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BAE6A62DACE6380043277C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0BAE6A82DACE6380043277C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05CE5C52DAD2D71007A4F76 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D05CE5C62DAD3398007A4F76 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D09200062DAD173B00455F99 /* Structures.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D05CE5C72DAD33A9007A4F76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAE6AA2DACE6380043277C /* ViewController.swift */,
+				D09200022DAD0BD700455F99 /* cardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D05CE5CA2DAD3AB0007A4F76 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				D05CE5CC2DAD3AF1007A4F76 /* ImagePresentor.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		D05CE5CB2DAD3ABE007A4F76 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D05CE5C82DAD3754007A4F76 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		D0BAE69A2DACE6380043277C = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +146,14 @@
 		D0BAE6A52DACE6380043277C /* UnderstandingEverything */ = {
 			isa = PBXGroup;
 			children = (
+				D05CE5CB2DAD3ABE007A4F76 /* Interactor */,
+				D05CE5CA2DAD3AB0007A4F76 /* Presentor */,
+				D05CE5C72DAD33A9007A4F76 /* View */,
+				D05CE5C62DAD3398007A4F76 /* Entity */,
 				D0BAE6A62DACE6380043277C /* AppDelegate.swift */,
 				D0BAE6A82DACE6380043277C /* SceneDelegate.swift */,
-				D0BAE6AA2DACE6380043277C /* ViewController.swift */,
+				D09200082DAD186C00455F99 /* APIRequestHandler.swift */,
+				D09200042DAD16EB00455F99 /* ConstantValues.swift */,
 				D0BAE6AC2DACE6380043277C /* Main.storyboard */,
 				D0BAE6AF2DACE63A0043277C /* Assets.xcassets */,
 				D0BAE6B12DACE63A0043277C /* LaunchScreen.storyboard */,
@@ -143,6 +195,9 @@
 			dependencies = (
 			);
 			name = UnderstandingEverything;
+			packageProductDependencies = (
+				D05CE5C42DAD2D71007A4F76 /* SDWebImage */,
+			);
 			productName = UnderstandingEverything;
 			productReference = D0BAE6A32DACE6380043277C /* UnderstandingEverything.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +270,9 @@
 				Base,
 			);
 			mainGroup = D0BAE69A2DACE6380043277C;
+			packageReferences = (
+				D05CE5C32DAD2D71007A4F76 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = D0BAE6A42DACE6380043277C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +317,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BAE6AB2DACE6380043277C /* ViewController.swift in Sources */,
+				D09200072DAD173B00455F99 /* Structures.swift in Sources */,
+				D09200052DAD16EB00455F99 /* ConstantValues.swift in Sources */,
 				D0BAE6A72DACE6380043277C /* AppDelegate.swift in Sources */,
+				D05CE5CD2DAD3AF1007A4F76 /* ImagePresentor.swift in Sources */,
 				D0BAE6A92DACE6380043277C /* SceneDelegate.swift in Sources */,
+				D09200092DAD186C00455F99 /* APIRequestHandler.swift in Sources */,
+				D05CE5C92DAD3754007A4F76 /* Interactor.swift in Sources */,
+				D09200032DAD0BD700455F99 /* cardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +666,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D05CE5C32DAD2D71007A4F76 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D05CE5C42DAD2D71007A4F76 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D05CE5C32DAD2D71007A4F76 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0BAE69B2DACE6380043277C /* Project object */;
 }
