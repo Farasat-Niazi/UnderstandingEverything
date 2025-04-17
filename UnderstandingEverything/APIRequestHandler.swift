@@ -37,4 +37,16 @@ class APIRequestHandler {
             }
         }.resume()
     }
+    //MARK: - Added a method to initiate request
+    func initiateTapRequest(){
+        
+        print("getting updated")
+
+    }
+}
+extension APIRequestHandler : HandleTaps {
+    func tapBtn() {
+        print("get started button is been tapped inside API Request handler")
+        initiateTapRequest()
+    }
 }

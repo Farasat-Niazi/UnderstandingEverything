@@ -21,6 +21,10 @@ protocol UpdateURLProtocol: AnyObject {
     func updateURL(for index: Int, frontUrl: URL, backUrl: URL)
 }
 
+protocol HandleTaps: AnyObject {
+    func tapBtn()
+    
+}
 class ViewController: UIViewController {
 
     @IBOutlet weak var introLabel: UILabel!
@@ -36,6 +40,8 @@ class ViewController: UIViewController {
     var imagePresenter: ImagePresenterProtocol?
     var imageInteractor: Interactor?
 
+    weak var delegate: HandleTaps?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +53,8 @@ class ViewController: UIViewController {
 
         imagePresenter?.setTapGesture(tapGesture)
         imagePresenter?.setLongPressGesture(longGesture)
+        
+        delegate = APIRequestHandler.sharedInstance()
 
         imageInteractor?.initiateImageAPICall { [weak self] in
             guard let self = self else { return }
@@ -61,7 +69,11 @@ class ViewController: UIViewController {
 
         startAutoScroll()
     }
-
+    @IBAction func getStartedBtnTapped(_ sender: Any) {
+        print("Button tapped in ViewController")
+        delegate?.tapBtn()
+    }
+    
     func loadImageForCard(at index: Int) {
         let side = cardSides[index] ?? .front
         imageInteractor?.getUniqueURL(
@@ -99,6 +111,7 @@ class ViewController: UIViewController {
         timer?.invalidate()
     }
 }
+
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
